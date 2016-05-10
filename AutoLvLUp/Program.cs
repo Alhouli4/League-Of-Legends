@@ -449,16 +449,7 @@ namespace AutoSpellUp
                     AbilitySequence = new[] { 2, 3, 1, 2, 2, 4, 2, 1, 2, 3, 4, 3, 3, 3, 1, 4, 1, 1 };
                     break;
                 case "Shaco":
-                    if (Player.PercentMagicDamageMod > Player.PercentPhysicalDamageMod)
-                    {
-                        AbilitySequence = new[] { 2, 1, 3, 2, 2, 4, 2, 3, 2, 3, 4, 3, 3, 1, 1, 4, 1, 1 };
-                        Tipo = " AP";
-                    }
-                    else
-                    {
-                        AbilitySequence = new[] { 1, 3, 2, 1, 1, 4, 1, 3, 1, 3, 4, 3, 3, 2, 2, 4, 2, 2 };
-                        Tipo = " AD";
-                    }
+                    AbilitySequence = new[] {2, 1, 3, 3, 3, 4, 3, 1, 3, 1, 4, 1, 1, 2, 2, 4, 2, 2};
                     break;
                 case "Shen":
                     AbilitySequence = new[] { 1, 3, 2, 1, 1, 4, 1, 2, 1, 2, 4, 2, 2, 3, 3, 4, 3, 3 };
@@ -478,7 +469,7 @@ namespace AutoSpellUp
                 case "Skarner":
                     if (smite != null && smite.Slot != SpellSlot.Unknown)
                     {
-                        AbilitySequence = new[] { 1, 3, 2, 1, 1, 4, 1, 2, 1, 3, 4, 3, 2, 2, 3, 4, 3, 2 };
+                        AbilitySequence = new[] { 1, 2, 3, 3, 3, 4, 3, 3, 1, 1, 4, 1, 1, 2, 2, 4, 2, 2 };
                         Tipo = " Jungler";
                     }
                     else
